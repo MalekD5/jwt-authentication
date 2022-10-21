@@ -34,7 +34,7 @@ export const authUser = async (req, res) => {
         await dbUser.save();
 
         // remove 'secure: true' while testing or you will keep recieving unauthorized response
-        res.cookie('jwt', refreshToken, { httpOnly: true, sameSite: true, secure: true, maxAge: 24 * 60 * 60 * 1000 });
+        res.cookie('jwt', refreshToken, { httpOnly: true, sameSite: 'None', secure: true, maxAge: 24 * 60 * 60 * 1000 });
         
         res.status(200).json({ accessToken });
     } else 
