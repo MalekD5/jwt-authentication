@@ -11,13 +11,13 @@ export const logut = async (req, res) => {
     const user = await userModel.findOne({ refreshToken }).exec();
 
     if (!user) {
-        res.clearCookie('jwt', { httpOnly: true, secure: true, sameSite: 'None' });
+        res.clearCookie('jwt', { httpOnly: true, secure: true, sameSite: 'none' });
         return res.sendStatus(204);
     }
     
     user.refreshToken = '';
     await user.save();
 
-    res.clearCookie('jwt', { httpOnly: true, secure: true, sameSite: 'None' });
+    res.clearCookie('jwt', { httpOnly: true, secure: true, sameSite: 'none' });
     res.sendStatus(204);
 }
