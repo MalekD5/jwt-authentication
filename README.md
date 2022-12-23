@@ -1,8 +1,6 @@
-# JWT Authentication
+# JWT Authentication (Typescript)
 
 JWT Authentication is an express project w/ MongoDB (mongoose). This project was built as PoC for a blog backend.
-
-
 
 **Features:**
 
@@ -14,11 +12,9 @@ JWT Authentication is an express project w/ MongoDB (mongoose). This project was
 
 - auth, logout, refresh, and register routes.
 
-- httpOnly and secure cookies. 
+- httpOnly and secure cookies.
 
 - Async CRUD operations using mongoose.
-
-
 
 # Compiling
 
@@ -51,5 +47,3 @@ the `ACCESS_TOKEN_SECRET` and `REFRESH_TOKEN_SECRET` can be anything. for `MONGO
 # License
 
 This project falls under the MIT license.
-
-
