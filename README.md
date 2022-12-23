@@ -1,4 +1,4 @@
-# JWT Authentication
+# JWT Authentication (Javascript version)
 
 JWT Authentication is an express project w/ MongoDB (mongoose). This project was built as PoC for a blog backend.
 
